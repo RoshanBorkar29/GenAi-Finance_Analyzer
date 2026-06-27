@@ -57,6 +57,8 @@ vectorstore/
 data/raw/
 data/extracted_images/
 data/ocr_output/
+data/extracted_text/
+data/processed/
 
 # ==========================================
 # Security & Credentials (CRITICAL)
