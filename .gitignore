@@ -1,0 +1,66 @@
+# ==========================================
+# Python & Environment Virtualization
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# Text Editors & IDEs (VS Code / PyCharm)
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==========================================
+# Notebooks & Local Storage
+# ==========================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# ==========================================
+# Project Specific: Datasets & Databases
+# ==========================================
+# Local Qdrant Storage / Cache
+vectorstore/
+.lock
+
+# Local extracted data and data logs (Prevents uploading heavy PDFs/Images)
+data/raw/
+data/extracted_images/
+data/ocr_output/
+
+# ==========================================
+# Security & Credentials (CRITICAL)
+# ==========================================
+# Local environment variables containing API keys
+.env
+.flaskenv
