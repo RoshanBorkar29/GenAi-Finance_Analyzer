@@ -4,12 +4,12 @@ from src.embeddings import EmbeddingGenerator
 from src.vector_store import VectorStore
 
 class Retriever:
-    # ✅ FIX: Changed to double underscores __init__ so variables are properly initialized
     def __init__(self):
         self.embedder = EmbeddingGenerator()
         self.vector_store = VectorStore()
 
     def encode_query(self, query):
+        # Local encoding logic matching the chunks engine
         embedding = self.embedder.model.encode(
             query,
             convert_to_numpy=True
@@ -31,8 +31,6 @@ class Retriever:
         
         retrieved_docs = []
         for idx in indices[0]:
-            # Optional safety check to prevent IndexErrors if idx is out of bounds
             if 0 <= idx < len(chunks):
                 retrieved_docs.append(chunks[idx])
-                
         return retrieved_docs
