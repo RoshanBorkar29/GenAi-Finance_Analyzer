@@ -49,11 +49,13 @@ wheels/
 # ==========================================
 # Project Specific: Datasets & Databases
 # ==========================================
-# Local Qdrant Storage / Cache
+# Local FAISS Database & Chunks Storage Folder
+vector_store/
 vectorstore/
 .lock
 
 # Local extracted data and data logs (Prevents uploading heavy PDFs/Images)
+data/reports/
 data/raw/
 data/extracted_images/
 data/ocr_output/
